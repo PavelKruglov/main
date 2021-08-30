@@ -1,0 +1,59 @@
+{% extends 'sworkshop/layout.html'%}
+{% load static %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+
+<div id="contact" class="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb72804aa2dd0f5d476f20c44a90aa3bb65602791b3c9d789257d1a7cae74b3d&amp;source=constructor"
+            width="100%" height="450" frameborder="0"></iframe>
+</div>
+
+<div class="contact">
+    <div class="container">
+
+        <div class="row row-margin-bottom">
+            <div class="col-lg-3 col-md-6">
+
+                <a class="btn btn-block btn-social btn-lg btn-odnoklassniki" href="#">
+                    <span class="fa fa-odnoklassniki"></span> Я в Odnoklassniki
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-md-offset-6">
+
+                <a class="btn btn-block btn-social btn-lg btn-instagram" href="#">
+                    <span class="fa fa-instagram"></span> Я в Instagram
+                </a>
+
+            </div>
+        </div>
+
+        <div class="row row-margin-bottom">
+            <div class="col-lg-3 col-md-6">
+
+                <a class="btn btn-block btn-social btn-lg btn-vk" href="#">
+                    <span class="fa fa-vk"></span>Я в VK
+                </a>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-md-offset-6">
+
+                <a class="btn btn-block btn-social btn-lg btn-google" href="mailto:#">
+                    <span class="fa fa-google"></span> Написать мне
+                </a>
+
+            </div>
+        </div>
+
+        <div class="row row-margin-bottom">
+            <div class="col-md-12">
+
+                <a class="btn btn-block btn btn-info btn-lg" href="tel:+8#">
+                    <span class="fa fa-phone"></span> Позвонить мне </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

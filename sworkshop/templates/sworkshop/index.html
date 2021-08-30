@@ -1,0 +1,46 @@
+{% extends 'sworkshop/layout.html'%}
+{% block title %}Новости{% endblock %}
+{% block content %}
+<div class="container">
+        <div class="blog">
+            <h2>Fasion blog</h2>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt in quae recusandae repellat tempora totam velit! Accusamus autem ex iusto magni, natus neque quasi quisquam saepe unde. Eius, ipsa.</span>
+            </p>
+        </div>
+
+        <div class="row row-margin-bottom">
+            {% for news in news_list%}
+            <div class="col-md-6">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                            <img class="lib-img-show" src="{{news.image.url}}">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lib-row lib-header">
+                                <h3>{{news.title}}</h3>
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{news.published}}
+                                </p>
+                                <p>{{news.content}}</p>
+
+                            </div>
+                            <div class="lib-row lib-footer">
+                                <a href="{{news.link}}"><span>Read more</span></a>
+
+                            </div>
+                            <div style="margin:40px 0;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             {%endfor%}
+        </div>
+</div>
+{% endblock %}
+
+
+
